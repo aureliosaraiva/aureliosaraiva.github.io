@@ -1,0 +1,24 @@
+---
+layout: default
+title: Tags
+description: Posts do blog organizados por tag.
+---
+<p class="count"><a href="{{ '/blog/' | relative_url }}">← blog</a></p>
+<h1>Tags</h1>
+{% assign tags = site.tags | sort %}
+{% if tags.size == 0 %}
+  <p class="empty">// nenhuma tag ainda</p>
+{% else %}
+<ul class="tag-cloud">
+  {% for tag in tags %}
+  <li><a href="#{{ tag[0] | slugify }}">#{{ tag[0] }}</a> <small>{{ tag[1].size }}</small></li>
+  {% endfor %}
+</ul>
+{% for tag in tags %}
+<section class="tag-section" id="{{ tag[0] | slugify }}">
+  <p class="year">#{{ tag[0] }}</p>
+  {% assign tag_posts = tag[1] %}
+  {% include post-list.html posts=tag_posts %}
+</section>
+{% endfor %}
+{% endif %}
