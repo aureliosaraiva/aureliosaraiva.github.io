@@ -7,7 +7,7 @@ layout: default
   <p class="meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date %}</time>
     · {% assign words = content | strip_html | number_of_words %}{{ words | divided_by: 200 | plus: 1 }} min de leitura
-    {% if page.tags.size > 0 %}· {% for tag in page.tags %}<span class="tag">#{{ tag }}</span> {% endfor %}{% endif %}
+    {% if page.tags.size > 0 %}· {% for tag in page.tags %}<a class="tag" href="{{ '/blog/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a> {% endfor %}{% endif %}
   </p>
   {{ content }}
 </article>

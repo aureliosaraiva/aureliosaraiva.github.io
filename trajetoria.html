@@ -22,3 +22,17 @@ description: Trajetória profissional de Aurélio Saraiva.
   </li>
   {% endfor %}
 </ol>
+
+{% if site.data.publicacoes.size > 0 %}
+<div class="section-head">
+  <h2>artigos e palestras</h2>
+</div>
+<ul class="item-list">
+  {% for item in site.data.publicacoes %}
+  <li>
+    <a href="{{ item.url }}">{{ item.title }}</a>
+    <span class="where">{{ item.where }}{% if item.year %} · {{ item.year }}{% endif %}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

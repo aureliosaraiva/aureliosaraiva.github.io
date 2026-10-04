@@ -1,0 +1,5 @@
+# Artigos, palestras e podcasts publicados fora deste blog.
+# Campos: title, url, where (veículo/evento), year (opcional)
+- title: "Ember: comunicação entre componentes distantes"
+  url: https://medium.com/creditas-tech/ember-comunica%C3%A7%C3%A3o-entre-componentes-dist%C3%A2ntes-bb84ef65d7f2
+  where: Creditas Tech (Medium)

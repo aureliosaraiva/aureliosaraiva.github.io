@@ -5,7 +5,7 @@ description: Textos sobre engenharia de software, arquitetura e IA aplicada.
 ---
 <h1>Blog</h1>
 <p class="count">
-  {{ site.posts.size }} {% if site.posts.size == 1 %}post{% else %}posts{% endif %} · <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+  {{ site.posts.size }} {% if site.posts.size == 1 %}post{% else %}posts{% endif %} · <a href="{{ '/blog/tags/' | relative_url }}">tags</a> · <a href="{{ '/feed.xml' | relative_url }}">rss</a>
 </p>
 {% if site.posts.size == 0 %}
   <p class="empty">// nenhum post ainda</p>
