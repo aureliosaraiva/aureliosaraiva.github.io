@@ -1,0 +1,27 @@
+# Trajetória profissional — do mais recente para o mais antigo.
+# Campos: period (texto livre), role, org, url (opcional), description, current (true/false)
+- period: atual
+  role: Distinguished Engineer
+  org: Creditas
+  url: https://www.creditas.com
+  description: >-
+    Atuação em padrões de arquitetura e em IA aplicada ao ciclo de
+    desenvolvimento de software, apoiando times de engenharia na evolução
+    técnica da plataforma.
+  current: true
+
+- period: antes
+  role: Software Engineer
+  org: Creditas
+  url: https://www.creditas.com
+  description: >-
+    Desenvolvimento de produtos digitais e publicações no blog de
+    tecnologia da Creditas.
+
+- period: "2009"
+  role: Primeiro commit público
+  org: GitHub
+  url: https://github.com/aureliosaraiva
+  description: >-
+    Início da trajetória em open source, com mais de uma centena de
+    repositórios públicos desde então.

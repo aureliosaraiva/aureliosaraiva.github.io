@@ -1,0 +1,24 @@
+---
+layout: default
+title: Trajetória
+permalink: /trajetoria/
+description: Trajetória profissional de Aurélio Saraiva.
+---
+<article class="prose">
+  <h1>Trajetória</h1>
+  <p>
+    Sou engenheiro de software e hoje atuo como Distinguished Engineer na Creditas,
+    de Valência, na Espanha. Meu foco é arquitetura de sistemas e o uso de IA para
+    tornar o desenvolvimento de software mais simples, rápido e confiável.
+  </p>
+</article>
+
+<ol class="timeline">
+  {% for item in site.data.trajetoria %}
+  <li{% if item.current %} class="current"{% endif %}>
+    <span class="period">{{ item.period }}</span>
+    <h3>{{ item.role }} <span class="org">@ {% if item.url %}<a href="{{ item.url }}">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %}</span></h3>
+    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ol>
