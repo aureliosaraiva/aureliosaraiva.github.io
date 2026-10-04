@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="prose">
+  <p class="meta"><a href="{{ '/blog/' | relative_url }}">← blog</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date %}</time>
+    · {% assign words = content | strip_html | number_of_words %}{{ words | divided_by: 200 | plus: 1 }} min de leitura
+    {% if page.tags.size > 0 %}· {% for tag in page.tags %}<span class="tag">#{{ tag }}</span> {% endfor %}{% endif %}
+  </p>
+  {{ content }}
+</article>
+{% if page.previous or page.next %}
+<nav class="post-nav" aria-label="Posts">
+  {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>anterior</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+  {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>próximo</span>{{ page.next.title }}</a>{% endif %}
+</nav>
+{% endif %}

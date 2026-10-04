@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+description: Textos sobre engenharia de software, arquitetura e IA aplicada.
+---
+<h1>Blog</h1>
+<p class="count">
+  {{ site.posts.size }} {% if site.posts.size == 1 %}post{% else %}posts{% endif %} · <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+</p>
+{% if site.posts.size == 0 %}
+  <p class="empty">// nenhum post ainda</p>
+{% endif %}
+{% assign by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+{% for year in by_year %}
+  <p class="year">{{ year.name }}</p>
+  {% include post-list.html posts=year.items %}
+{% endfor %}

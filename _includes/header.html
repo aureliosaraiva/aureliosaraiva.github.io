@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="{{ '/' | relative_url }}"><span class="prompt">~/</span>aurelio</a>
+    <nav aria-label="Principal">
+      {% assign path = page.url %}
+      <a href="{{ '/' | relative_url }}"{% if path == '/' %} aria-current="page"{% endif %}>início</a>
+      <a href="{{ '/trajetoria/' | relative_url }}"{% if path contains '/trajetoria' %} aria-current="page"{% endif %}>trajetória</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if path contains '/blog' %} aria-current="page"{% endif %}>blog</a>
+    </nav>
+  </div>
+</header>

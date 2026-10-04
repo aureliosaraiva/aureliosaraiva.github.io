@@ -1,56 +1,41 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aurélio Saraiva</title>
-  <meta name="description" content="Site pessoal de Aurélio Saraiva, Distinguished Engineer na Creditas.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site">
-    <div class="container">
-      <a class="brand" href="index.html">Aurélio Saraiva</a>
-      <nav aria-label="Principal">
-        <a href="index.html" aria-current="page">Início</a>
-        <a href="privacidade.html">Privacidade</a>
-        <a href="termos.html">Termos de Uso</a>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <section class="hero">
-      <img src="https://avatars.githubusercontent.com/u/118861?v=4" alt="Foto de Aurélio Saraiva">
-      <div>
-        <h1>Aurélio Saraiva</h1>
-        <p>Distinguished Engineer na Creditas · Valência, Espanha</p>
-      </div>
-    </section>
+---
+layout: default
+---
+<section class="hero">
+  <p class="cmd">whoami</p>
+  <h1>Aurélio Saraiva</h1>
+  <p class="role">Distinguished Engineer @ Creditas · Valência, ES</p>
+  <p class="lead">
+    Engenheiro de software. Trabalho com arquitetura de sistemas e com IA aplicada
+    ao ciclo de desenvolvimento. Aqui escrevo sobre engenharia, decisões técnicas
+    e o que venho aprendendo pelo caminho.
+  </p>
+  <ul class="links">
+    <li><a href="https://github.com/{{ site.author.github }}" rel="me">github</a></li>
+    <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" rel="me">linkedin</a></li>
+    <li><a href="https://x.com/{{ site.author.x }}" rel="me">x</a></li>
+    <li><a href="mailto:{{ site.author.email }}">email</a></li>
+  </ul>
+</section>
 
-    <h2>Sobre mim</h2>
-    <p>Olá! Sou o Aurélio, engenheiro de software apaixonado por construir produtos digitais. Atualmente sou <strong>Distinguished Engineer na Creditas</strong>, onde atuo em arquitetura de sistemas, liderança técnica e na evolução da plataforma de engenharia.</p>
-    <p>Gosto de resolver problemas complexos com soluções simples, de compartilhar conhecimento e de ajudar times a entregarem software de qualidade de forma sustentável. Moro em Valência, na Espanha.</p>
+<div class="section-head">
+  <h2>posts recentes</h2>
+  <a href="{{ '/blog/' | relative_url }}">ver todos →</a>
+</div>
+{% if site.posts.size > 0 %}
+  {% include post-list.html posts=site.posts limit=5 %}
+{% else %}
+  <p class="empty">// nenhum post ainda</p>
+{% endif %}
 
-    <h2>Interesses</h2>
-    <ul>
-      <li>Arquitetura de software e sistemas distribuídos</li>
-      <li>Liderança técnica e cultura de engenharia</li>
-      <li>Produtos financeiros e tecnologia</li>
-      <li>Open source e inteligência artificial aplicada</li>
-    </ul>
-
-    <h2>Onde me encontrar</h2>
-    <ul class="links">
-      <li><a href="https://github.com/aureliosaraiva" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/aureliosaraiva" rel="noopener">LinkedIn</a></li>
-      <li><a href="mailto:aurelio.saraiva@creditas.com.br">E-mail</a></li>
-    </ul>
-  </main>
-  <footer class="site">
-    <div class="container">
-      <span>© 2026 Aurélio Saraiva</span>
-      <span><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></span>
-    </div>
-  </footer>
-</body>
-</html>
+<div class="section-head">
+  <h2>interesses</h2>
+</div>
+<ul class="stack">
+  <li>arquitetura de software</li>
+  <li>sistemas distribuídos</li>
+  <li>ia aplicada</li>
+  <li>developer experience</li>
+  <li>liderança técnica</li>
+  <li>fintech</li>
+</ul>

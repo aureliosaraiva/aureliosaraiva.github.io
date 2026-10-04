@@ -1,0 +1,38 @@
+title: Aurélio Saraiva
+description: Distinguished Engineer na Creditas. Escrevo sobre arquitetura de software, engenharia e IA aplicada ao desenvolvimento.
+url: https://aureliosaraiva.github.io
+baseurl: ""
+lang: pt-BR
+timezone: Europe/Madrid
+
+author:
+  name: Aurélio Saraiva
+  email: aurelio.saraiva@creditas.com.br
+  github: aureliosaraiva
+  linkedin: aureliosaraiva
+  x: aureliosaraiva
+
+permalink: /blog/:year/:month/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
