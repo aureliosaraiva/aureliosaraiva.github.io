@@ -23,6 +23,20 @@ description: Trajetória profissional de Aurélio Saraiva.
   {% endfor %}
 </ol>
 
+{% if site.data.comunidade.size > 0 %}
+<div class="section-head">
+  <h2>open source e comunidade</h2>
+</div>
+<ul class="item-list">
+  {% for item in site.data.comunidade %}
+  <li>
+    <a href="{{ item.url }}">{{ item.name }}</a>
+    <span class="where">{{ item.role }}{% if item.description %} · {{ item.description }}{% endif %}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 {% if site.data.publicacoes.size > 0 %}
 <div class="section-head">
   <h2>artigos e palestras</h2>

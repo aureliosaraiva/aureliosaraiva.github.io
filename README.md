@@ -20,11 +20,14 @@ Conteúdo em Markdown.
 Faça commit na `main` e o GitHub Pages publica sozinho em cerca de um minuto.
 Dá para criar o arquivo direto pela interface do GitHub (**Add file → Create new file**).
 
+Rascunhos ficam em `_drafts/` (sem data no nome) e não são publicados. Para publicar, mova para `_posts/` adicionando a data.
+
 Tags viram links automaticamente para `/blog/tags/`. Para usar uma imagem de prévia específica no post, adicione `image: /caminho/da/imagem.png` no cabeçalho (o padrão é `assets/og.png`).
 
 ## Editar a trajetória e publicações
 
 - Linha do tempo de `/trajetoria/`: [`_data/trajetoria.yml`](_data/trajetoria.yml)
+- Open source e comunidade: [`_data/comunidade.yml`](_data/comunidade.yml)
 - Artigos, palestras e podcasts: [`_data/publicacoes.yml`](_data/publicacoes.yml)
 - Nome, e-mail e redes sociais: [`_config.yml`](_config.yml)
 
