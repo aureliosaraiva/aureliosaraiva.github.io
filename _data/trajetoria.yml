@@ -1,22 +1,53 @@
 # Trajetória profissional — do mais recente para o mais antigo.
 # Campos: period (texto livre), role, org, url (opcional), description, current (true/false)
-- period: atual
-  role: Distinguished Engineer
+- period: 2024 — atual
+  role: Distinguished Software Engineer
   org: Creditas
   url: https://www.creditas.com
   description: >-
-    Atuação em padrões de arquitetura e em IA aplicada ao ciclo de
-    desenvolvimento de software, apoiando times de engenharia na evolução
-    técnica da plataforma.
+    Arquitetura de software, padrões e decisões técnicas de médio e longo
+    prazo para toda a engenharia. Hoje concentrado em modernização de
+    arquitetura, organização da plataforma em domínios e IA aplicada ao
+    ciclo de desenvolvimento de software.
   current: true
 
-- period: antes
-  role: Software Engineer
+- period: 2023 — 2024
+  role: Principal Engineer · Benefícios
   org: Creditas
   url: https://www.creditas.com
   description: >-
-    Desenvolvimento de produtos digitais e publicações no blog de
-    tecnologia da Creditas.
+    Liderança técnica da vertical de benefícios.
+
+- period: 2021 — 2023
+  role: Principal Engineer · Seguros
+  org: Creditas
+  url: https://www.creditas.com
+  description: >-
+    Liderança técnica da vertical de seguros.
+
+- period: "2020"
+  role: Global Technology Leader
+  org: Creditas
+  url: https://www.creditas.com
+
+- period: "2019"
+  role: Platform Product Manager
+  org: Creditas
+  url: https://www.creditas.com
+  description: >-
+    Passagem por produto, cuidando da plataforma como produto interno.
+
+- period: "2018"
+  role: Engineering Manager
+  org: Creditas
+  url: https://www.creditas.com
+
+- period: "2017"
+  role: Specialist Software Engineer
+  org: Creditas
+  url: https://www.creditas.com
+  description: >-
+    Entrada na Creditas, desenvolvendo produtos digitais de crédito.
 
 - period: "2009"
   role: Primeiro commit público

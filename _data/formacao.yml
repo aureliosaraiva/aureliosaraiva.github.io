@@ -1,0 +1,7 @@
+# Formação. Campos: course, org, url (opcional), description
+- course: Máster en Formación Permanente en Inteligencia Artificial Aplicada
+  org: Universidad Europea de Madrid
+  url: https://universidadeuropea.com
+  description: >-
+    Trabalho final sobre especialização de assistentes técnicos com LLM:
+    comparação controlada entre RAG e grafo de conhecimento.

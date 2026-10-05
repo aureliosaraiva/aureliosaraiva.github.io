@@ -27,6 +27,7 @@ Tags viram links automaticamente para `/blog/tags/`. Para usar uma imagem de pr�
 ## Editar a trajetória e publicações
 
 - Linha do tempo de `/trajetoria/`: [`_data/trajetoria.yml`](_data/trajetoria.yml)
+- Formação: [`_data/formacao.yml`](_data/formacao.yml)
 - Open source e comunidade: [`_data/comunidade.yml`](_data/comunidade.yml)
 - Artigos, palestras e podcasts: [`_data/publicacoes.yml`](_data/publicacoes.yml)
 - Nome, e-mail e redes sociais: [`_config.yml`](_config.yml)
