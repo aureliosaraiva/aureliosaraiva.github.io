@@ -1,0 +1,31 @@
+# Open source e comunidade.
+# Campos: name, url, role, description
+- name: Front in Floripa
+  url: https://github.com/frontinfloripa
+  role: organização
+  description: Um dos maiores eventos de front-end do Brasil, realizado em Florianópolis.
+
+- name: Ember Brasil
+  url: https://github.com/ember-brasil
+  role: comunidade
+  description: Comunidade brasileira de Ember.js.
+
+- name: Semantic-UI-Ember
+  url: https://github.com/Semantic-Org/Semantic-UI-Ember
+  role: contribuições
+  description: Integração oficial do Semantic UI com Ember.
+
+- name: jquery-maskmoney
+  url: https://github.com/plentz/jquery-maskmoney
+  role: contribuições
+  description: Plugin jQuery para máscara de valores monetários.
+
+- name: flask-toolkit
+  url: https://github.com/Creditas/flask-toolkit
+  role: contribuições
+  description: Toolkit open source da Creditas para aplicações Flask.
+
+- name: resharper-analyzer-action
+  url: https://github.com/aureliosaraiva/resharper-analyzer-action
+  role: autor
+  description: GitHub Action que publica sugestões do ReSharper em pull requests.

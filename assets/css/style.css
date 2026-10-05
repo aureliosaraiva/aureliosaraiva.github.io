@@ -222,3 +222,12 @@ div.highlighter-rouge pre { margin: 0; }
   .post-list li { grid-template-columns: 1fr; gap: 2px; }
 }
 .count { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); margin: 0 0 8px; }
+
+/* ---------- impressão ---------- */
+@media print {
+  :root { --bg: #fff; --text: #000; --muted: #444; --border: #ccc; --accent: #000; }
+  .site-header nav, .theme-toggle, .site-footer nav, .code-wrap .btn, .post-nav, .skip { display: none !important; }
+  main.wrap { padding: 0; max-width: none; }
+  .prose a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: var(--muted); word-break: break-all; }
+  pre { white-space: pre-wrap; }
+}
