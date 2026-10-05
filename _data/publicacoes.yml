@@ -1,5 +1,15 @@
 # Artigos, palestras e podcasts publicados fora deste blog.
 # Campos: title, url, where (veículo/evento), year (opcional)
+- title: "RAG ou grafo de conhecimento? Depende do modelo, e isso muda a pergunta"
+  url: https://www.linkedin.com/pulse/rag-ou-grafo-de-conhecimento-depende-do-modelo-e-isso-aur%C3%A9lio-saraiva-iyo3f/
+  where: LinkedIn
+  year: 2026
+
+- title: "RAG ou grafo de conhecimento? Medi em 2.160 respostas, e a resposta é desconfortável"
+  url: https://medium.com/@aureliosaraiva/rag-ou-grafo-de-conhecimento-medi-em-2-160-respostas-e-a-resposta-%C3%A9-desconfort%C3%A1vel-a734ec298777
+  where: Medium
+  year: 2026
+
 - title: "Ember: comunicação entre componentes distantes"
   url: https://medium.com/creditas-tech/ember-comunica%C3%A7%C3%A3o-entre-componentes-dist%C3%A2ntes-bb84ef65d7f2
   where: Creditas Tech (Medium)

@@ -11,6 +11,12 @@ description: Trajetória profissional de Aurélio Saraiva.
     de Valência, na Espanha. Meu foco é arquitetura de sistemas e o uso de IA para
     tornar o desenvolvimento de software mais simples, rápido e confiável.
   </p>
+  <p>
+    Estou na Creditas desde 2017. No caminho passei por gestão de engenharia e por
+    produto antes de voltar à trilha técnica, e essa volta é o que mais molda como
+    eu penso arquitetura hoje: decisão técnica é decisão de negócio com prazo longo.
+    Trabalho principalmente com Kotlin e Spring Boot, TypeScript e Node, e Python.
+  </p>
 </article>
 
 <ol class="timeline">
@@ -22,6 +28,20 @@ description: Trajetória profissional de Aurélio Saraiva.
   </li>
   {% endfor %}
 </ol>
+
+{% if site.data.formacao.size > 0 %}
+<div class="section-head">
+  <h2>formação</h2>
+</div>
+<ul class="item-list">
+  {% for item in site.data.formacao %}
+  <li>
+    {% if item.url %}<a href="{{ item.url }}">{{ item.course }}</a>{% else %}{{ item.course }}{% endif %}
+    <span class="where">{{ item.org }}{% if item.description %} · {{ item.description }}{% endif %}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
 
 {% if site.data.comunidade.size > 0 %}
 <div class="section-head">
